@@ -1,4 +1,12 @@
+#!/usr/bin/env python3
+
+# text_in_filler.py
+#
+# One of several simple Urwid examples.
+# Very simple ListBox example.
+
 import urwid
+import urwid.curses_display
 
 # A really basic palette of markup.
 palette = [
@@ -20,7 +28,20 @@ body_listbox = urwid.ListBox(
 	)
 )
 
+# Create a Screen object that uses the OS's ncurses instead of Urwid's
+# default of using the Python based raw_display.
+
+screen = urwid.curses_display.Screen()
+
+# Setup the object to display on screen
 layout = urwid.Frame(body_listbox, header=text_header)
 
-urwid.MainLoop(layout, palette).run()
+# Create the event loop, specifying the ncurses based screen we created earlier.
+loop = urwid.MainLoop (
+	layout,
+	palette,
+	screen=screen
+)
+
+loop.run()
 
