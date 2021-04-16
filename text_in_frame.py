@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+
+# text_in_frame.py
+#
+# One of several simple Urwid examples.
+# Embed some Text objects in a Frame object. We'll also add a Text
+# object to the header, and some Text objects in a Column object,
+# and add that in to Frame's footer.
+
 import urwid
 
 palette = [
@@ -12,10 +21,6 @@ body_text2 = urwid.Text (u"Second line.")
 footer_columns = urwid.Columns (
 	[urwid.Text (u"Column 1"), urwid.Text (u"Column 2"), urwid.Text (u"Column 3")],
 	dividechars=1
-)	
-
-footer_piled = urwid.Pile (
-	[footer_columns]
 )
 
 # Must wrap the "flow" object in a "box" object in order for it
