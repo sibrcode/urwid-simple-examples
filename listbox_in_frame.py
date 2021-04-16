@@ -14,7 +14,8 @@ palette = [
     ('bold', 'white,bold', '')
 ]
 
-text_header = urwid.Text (('titlebar', "header text here"))
+# Header text + blank line for spacing.
+text_header = urwid.Text (('titlebar', "Ctrl-C to exit\n"))
 
 body_text1 = urwid.Text (u"Body text is in this part over here.")
 body_text2 = urwid.Text (u"We need an extra line for this example.")
