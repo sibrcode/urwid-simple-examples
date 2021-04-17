@@ -32,7 +32,7 @@ body_filled = urwid.Filler (
 
 # We'll use a Frame object to combine header, body, and footer.
 # The header & footer are expected to be flow objects.
-layout= urwid.Frame(
+layout= urwid.Frame (
 	body_filled,
 	header=header_text,
 	footer=footer_columns
