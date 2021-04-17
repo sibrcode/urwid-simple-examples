@@ -1,9 +1,11 @@
 # urwid-simple-examples
 Easy to understand examples of how to use the Urwid module in Python
 
-Although the repository for Urwid at https://github.com/urwid/urwid/tree/master/examples contains over a dozen examples, I found they were often too complex for me to easily understand how different objects fit together. In particular, Urwid is fairly particular about flow and box objects are combined.
+Although the repository for Urwid at https://github.com/urwid/urwid/tree/master/examples contains over a dozen examples, plus more in the Tutorial section, I found they were often too complex for me to easily understand how different objects fit together. In particular, Urwid is fairly particular about flow and box objects are combined.
 
-These are some simplified illustrations of typical Urwid programming patterns.
+These are simplified illustrations of a few typical Urwid programming patterns.
+
+---
 
 ## buttons_in_column.py
 
@@ -25,6 +27,6 @@ RadioButton objects are added to a GridFlow object.
 
 This is the simplest example. Just some Text objects inside of a Filler object.
 
-# text_in_frame.py
+## text_in_frame.py
 
 Shows Text objects centered on the screen using a Filled object.
