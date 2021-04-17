@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-# text_in_frame.py
+# radiobuttons_in_gridflow.py
 #
 # One of several simple Urwid examples.
-# Embed some Text objects in a Frame object. We'll also add a Text
-# object to the header, and some Text objects in a Column object,
-# and add that in to Frame's footer.
+# Embed RadioButtons in a GridFlow object so that they will adjust their position
+# based on available width of screen. The GridFlow object object must then be put in a box
+# widget, so we add that to a Fill object. Finally, we add the Fill object to a Frame,
+# and add some Text to its header.
 
 import urwid
 
@@ -15,6 +16,7 @@ palette = [
     ('bold', 'standout', '')
 ]
 
+# We'll use this later with the Frame.
 text_header = urwid.Text (('titlebar', "Press Ctrl-C to exit\n"), align='center')
 
 button_group = []
