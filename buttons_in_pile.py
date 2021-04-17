@@ -16,8 +16,8 @@ palette = [
 text_header = urwid.Text (('titlebar', "Press Ctrl-C to exit\n"), align='center')
 
 def click_handler (button):
-	 """Clear any highlighting on previous button (we don't know which),
-	 and add highlight to the button just clicked."""
+	"""Clear any highlighting on previous button (we don't know which),
+	and add highlight to the button just clicked."""
 	
 	for btn in BUTTON_LIST:
 		if btn == button:
@@ -36,17 +36,11 @@ BUTTON_LIST = [
 # We'll combine the RadioButton objects in a GridFlow object, which will pack
 # them as closely as possible.
 
-body_gridflow = urwid.GridFlow(
-	BUTTON_LIST,
-	30,
-	4,
-	1,
-	'center'
-)
+body_pile = urwid.Pile(BUTTON_LIST)
 
 # The frame we use later must have a box object for its body.
 body_filled = urwid.Filler(
-	body_gridflow,
+	body_pile,
 	height='pack',
 	valign='top'
 )

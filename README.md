@@ -5,6 +5,10 @@ Although the repository for Urwid at https://github.com/urwid/urwid/tree/master/
 
 These are some simplified illustrations of typical Urwid programming patterns.
 
+## buttons_in_pile.py
+
+Displays three buttons in a Pile, with click handler to highlight the last "clicked" button.
+
 ## gridflow_in_frame.py
 
 Displays Text objects that have been added to GridFlow object, which will dynamically arrange the position of the text blocks based on available space. Adjust your terminal window size to see the behavior. 
