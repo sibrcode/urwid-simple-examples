@@ -12,7 +12,10 @@ Displays Text objects that have been added to GridFlow object, which will dynami
 ## listbox_in_frame.py
 
 Adds Text objects to a basic ListBox object, which is itself in a Frame. Also shows using the OS's ncurses terminal interface instead Urwid's default of raw_display.
+
 ## radiobuttons_in_gridflow.py
+
+RadioButton objects are added to a GridFlow object.
 
 ## text_in_filler.py
 
