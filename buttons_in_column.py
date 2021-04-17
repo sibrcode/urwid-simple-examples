@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# buttons_in_gridflow.py
+# buttons_in_column.py
 #
 # One of several simple Urwid examples.
 # Add some buttons to a Frame object, using a Pile object to stack them vertically.
