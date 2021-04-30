@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# text_in_frame.py
+# gridflow_in_frame.py
 #
 # One of several simple Urwid examples.
 # Text objects are embedded into a GridFlow object so that they will adjust their position
