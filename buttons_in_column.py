@@ -5,7 +5,7 @@
 # One of several simple Urwid examples.
 # Add some buttons to a Frame object, using a Column object to stack them horizontally.
 #
-# FYI, There are some nicer looking examples of buttons/menus here:
+# FYI, there are some nicer looking examples of buttons here:
 #	http://urwid.org/tutorial/index.html  (under Simple Menu)
 #	https://stackoverflow.com/questions/52252730/how-do-you-make-buttons-of-the-python-library-urwid-look-pretty
 
