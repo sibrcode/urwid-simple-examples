@@ -56,10 +56,11 @@ def box_button(*args, **kwargs):
     #b = urwid.Padding(b, left=4, right=4)
     return b
 
+# We'll display a message whenever a button is clicked.
 footer = urwid.Text ('')
 onclick = lambda w: footer.set_text('clicked: %r' % w)
 
-
+# Create the object that will be added to GridFlow object.
 a = urwid.AttrMap (TextItem (u"Text A"), '', 'highlight')
 b = urwid.AttrMap (PlainButton (u"Button B", on_press=onclick), '', 'highlight')
 c = urwid.AttrMap (PlainButton (u"Button C", on_press=onclick), '', 'highlight')
@@ -73,6 +74,7 @@ screen = urwid.curses_display.Screen()
 grid = urwid.GridFlow([a,b,c, footer], cell_width=36, h_sep=2, v_sep=1, align='left')
 grid.focus_position = 1 # Select first button by default
 
+# Used to push the GridFlow object up to top of screen.
 fill = urwid.Filler(grid, 'top')
 
 loop = urwid.MainLoop(fill,PALETTE,screen=screen)
