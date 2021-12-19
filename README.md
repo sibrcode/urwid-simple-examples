@@ -1,7 +1,7 @@
 # urwid-simple-examples
 Easy to understand examples of how to use the Urwid module in Python
 
-Although the repository for Urwid at https://github.com/urwid/urwid/tree/master/examples contains over a dozen examples, plus more in the Tutorial section, I found they were often too complex for me to easily understand how different objects fit together. In particular, Urwid is fairly particular about flow and box objects are combined.
+Although the repository for Urwid at https://github.com/urwid/urwid/tree/master/examples contains over a dozen examples, plus more in the Tutorial section, I found they were often too complex for me to easily understand how different objects fit together. In particular, Urwid is fairly particular about how flow and box objects are combined.
 
 These are simplified illustrations of a few typical Urwid programming patterns.
 
@@ -11,9 +11,13 @@ These are simplified illustrations of a few typical Urwid programming patterns.
 
 Displays three buttons in a Columns object, with handler to highlight the last "clicked" button.
 
+## gridflow_in_contents.py
+
+Displays Text objects that have been added to GridFlow object, which will dynamically arrange the position of the text blocks based on available space. Includes a timer to update a time display. Adjust your terminal window size to see the flow behavior. 
+
 ## gridflow_in_frame.py
 
-Displays Text objects that have been added to GridFlow object, which will dynamically arrange the position of the text blocks based on available space. Adjust your terminal window size to see the behavior. 
+Similar to the above, but displays a mix of buttons and text.
 
 ## listbox_in_frame.py
 
